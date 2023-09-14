@@ -265,6 +265,7 @@ section .content .slider-button:hover{
 .section-1-content p{
     font-weight: 300;
     width: 450px;
+    color: #000;
 }
 .section-1-content button{
     background-color: #face93;
@@ -312,6 +313,7 @@ section .content .slider-button:hover{
 .section-2-content p{
     font-weight: 300;
     width: 450px;
+    color: #000;
 }
 .section-2-content button{
     background-color: #face93;
@@ -365,6 +367,7 @@ section .content .slider-button:hover{
 .section-3-content p{
     font-weight: 300;
     width: 450px;
+    color: #000;
 }
 .section-3-content button{
     background-color: #face93;
@@ -412,6 +415,7 @@ section .content .slider-button:hover{
 .section-4-content p{
     font-weight: 300;
     width: 450px;
+    color: #000;
 }
 .section-4-content button{
     background-color: #face93;
@@ -463,6 +467,7 @@ section .content .slider-button:hover{
 .section-5-content p{
     font-weight: 300;
     width: 450px;
+    color: #000;
 }
 .section-5-content button{
     background-color: #face93;
@@ -501,6 +506,7 @@ section .content .slider-button:hover{
 .section-6-content p{
     font-weight: 300;
     width: 750px;
+    color: #000;
 }
 .section-6-content h5{
     letter-spacing: 3px;
