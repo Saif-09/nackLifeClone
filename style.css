@@ -18,6 +18,7 @@ ul {
     
 }
 
+/* navbar */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -79,6 +80,9 @@ ul {
     width: 32px;
     margin-bottom: 6px;
 }
+
+/* end of navbar */
+
 /* section{
 padding: 100px 200px;
 } */
@@ -749,55 +753,116 @@ hr {
     border-style: solid; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.test {
-    width: 100%;
-    padding-top: 100px; 
-    background-color: blue;
-}
-
-
-.test p {
-    font-size: 66px;
-    line-height: 1.5; 
-    margin: 20px; 
-    color: #333;
-}
-
-
 .nav-scrolled {
     background-color: #fff; 
     color: black; 
 }
 
+
+@media (max-width: 768px) {
+    
+    .nav-list ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list ul li {
+        margin-bottom: 10px;
+    }
+    .logo {
+        margin-inline-end: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .right-nav {
+        margin-left: 0;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .carousel .content {
+        width: 90%;
+    }
+    .section-1, .section-2, .section-3 {
+        margin: 40px 20px;
+        padding: 0px 30px;
+    }
+    .section-1-img img, .section-2-img img, .section-3-img img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .section-1-content, .section-2-content, .section-3-content {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .slider-box .boxes-container {
+        margin-top: 20px;
+    }
+    .footer-upper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-upper .list {
+        margin: 0;
+    }
+    .footer-upper .list .line-1, .footer-upper .list .line-2 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-form {
+        margin-top: 20px;
+    }
+    .footer-down {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    .nav {
+        padding: 10px 15px;
+    }
+    .nav-list ul li {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .logo svg {
+        width: 50px;
+    }
+    .right-nav div {
+        margin-left: 10px;
+    }
+    .carousel .content {
+        width: 100%;
+        text-align: center;
+    }
+    .section-1, .section-2, .section-3 {
+        margin: 20px 10px;
+        padding: 0px 15px;
+    }
+    .section-1-img img, .section-2-img img, .section-3-img img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .section-1-content, .section-2-content, .section-3-content {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .slider-box .boxes-container {
+        margin-top: 10px;
+    }
+    .footer-upper .contact-form input.input-box {
+        width: 100%;
+    }
+    .footer-upper .contact-form button {
+        width: 100%;
+    }
+    .footer-down {
+        text-align: center;
+        font-size: 12px;
+    }
+}
 
 
 
