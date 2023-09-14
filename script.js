@@ -1,4 +1,4 @@
-// JavaScript to handle the navbar background color change on scroll
+
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('.nav');
     const navListItems = document.querySelectorAll('.nav-list ul li'); 
@@ -20,3 +20,20 @@ window.addEventListener('scroll', function() {
         logo.setAttribute('fill', 'white');
     }
 });
+
+const container = document.querySelector('.container');
+const slidingSections = document.querySelectorAll('.sliding-img');
+let currentIndex = 0;
+
+function slideNext() {
+    currentIndex = (currentIndex + 1) % slidingSections.length;
+    updateSlide();
+}
+
+function updateSlide() {
+    const translateXValue = -currentIndex * 100 + '%';
+    container.style.transform = `translateX(${translateXValue})`;
+}
+
+setInterval(slideNext, 3000);
+
