@@ -649,7 +649,7 @@ footer .footer-down{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 300;
+    font-weight: 500;
     bottom: 0;
     font-size: 18px;
 }
