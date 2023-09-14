@@ -37,3 +37,30 @@ function updateSlide() {
 
 setInterval(slideNext, 3000);
 
+const boxWrapper = document.querySelector('.box-wrapper');
+const box = document.querySelectorAll('.box-wrapper > *');
+const boxLength = box.length
+const perView = 3;
+let totalScroll = 0;
+const delay = 3000
+
+boxWrapper.style.setProperty('--per-view', perView)
+for (let i = 0; i < perView; i++) {
+  boxWrapper.insertAdjacentHTML('beforeend', box[i].outerHTML)
+}
+
+let autoScroll = setInterval(scrolling, delay)
+
+function scrolling(){
+  totalScroll++
+  if(totalScroll=== boxLength+1){
+    clearInterval(autoScroll)
+    totalScroll=1
+    boxWrapper.style.transition = '0s'
+    boxWrapper.style.left = '0'
+    autoScroll = setInterval(scrolling, delay)
+  }
+  const widthEl = document.querySelector('.box-wrapper > :first-child').offsetWidth + 24
+  boxWrapper.style.left = `-${totalScroll * widthEl}px`
+  boxWrapper.style.transition = '.3s'
+}
