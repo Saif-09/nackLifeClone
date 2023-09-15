@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: ApercuPro-Light, Source Sans Pro, Helvetica, sans-serif;
+    user-select: none;
 }
 
 html,
