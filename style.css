@@ -799,13 +799,13 @@ footer .footer-upper .contact-form h2 {
 footer .footer-upper .contact-form .input-box {
     width: 420px;
     height: 50px;
-    background-color: #000;
+    /* background-color: #000; */
     border-color: #fff;
     border-width: 1px;
 
-
+    color: #fff;
     outline: none;
-    /* background: transparent;  */
+    background: transparent;
     padding: 0px 0px 0px 9px;
     margin-top: 8px;
 }
